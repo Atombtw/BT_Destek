@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GENMOT_MESSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tbl_Admin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Mail" Type="varchar" MaxLength="50" />
+    <Property Name="Sifre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tbl_Birim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Birim" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Tbl_Destek">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="int" />
+    <Property Name="Birim" Type="tinyint" />
+    <Property Name="Aciklama" Type="varchar(max)" />
+    <Property Name="Durum" Type="varchar" MaxLength="50" />
+    <Property Name="TalepOnaylayan" Type="varchar" MaxLength="150" />
+    <Property Name="TalepSorunAciklama" Type="varchar(max)" />
+    <Property Name="OkunduMu" Type="bit" />
+    <Property Name="TalepTarih" Type="smalldatetime" />
+    <Property Name="OnayTarih" Type="smalldatetime" />
+    <Property Name="BitisTarih" Type="smalldatetime" />
+    <Property Name="RedTarih" Type="smalldatetime" />
+    <Property Name="BeklemeTarih" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="Tbl_Personel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="varchar" MaxLength="150" />
+    <Property Name="Mail" Type="varchar" MaxLength="200" />
+    <Property Name="Sifre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Tbl_Destek_Tbl_Birim">
+    <End Role="Tbl_Birim" Type="Self.Tbl_Birim" Multiplicity="0..1" />
+    <End Role="Tbl_Destek" Type="Self.Tbl_Destek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Birim">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Destek">
+        <PropertyRef Name="Birim" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Destek_Tbl_Personel">
+    <End Role="Tbl_Personel" Type="Self.Tbl_Personel" Multiplicity="0..1" />
+    <End Role="Tbl_Destek" Type="Self.Tbl_Destek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Destek">
+        <PropertyRef Name="AdSoyad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GENMOT_MESSModelStoreContainer">
+    <EntitySet Name="Tbl_Admin" EntityType="Self.Tbl_Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Birim" EntityType="Self.Tbl_Birim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Destek" EntityType="Self.Tbl_Destek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Personel" EntityType="Self.Tbl_Personel" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Tbl_Destek_Tbl_Birim" Association="Self.FK_Tbl_Destek_Tbl_Birim">
+      <End Role="Tbl_Birim" EntitySet="Tbl_Birim" />
+      <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Destek_Tbl_Personel" Association="Self.FK_Tbl_Destek_Tbl_Personel">
+      <End Role="Tbl_Personel" EntitySet="Tbl_Personel" />
+      <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

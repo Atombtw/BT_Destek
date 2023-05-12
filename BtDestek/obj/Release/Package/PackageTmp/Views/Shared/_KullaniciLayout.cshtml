@@ -1,0 +1,110 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed" style="margin: 0; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: left; background-color: #fff; font-family: Source Sans Pro;">
+    <div style="position: relative; min-height: 100%;" class="wrapper">
+        <!-- Main Sidebar Container -->
+        <aside style="bottom: 0; float: none; height: 100vh; left: 0; position: fixed; top: 0; min-height: 100%; box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important; background-color: #343a40; overflow-y: hidden; z-index: 1038; transition: margin-left .3s ease-in-out,width .3s ease-in-out;" class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Sidebar -->
+            <a style="border-bottom: 1px solid #4b545c; color: rgba(255,255,255,.8); width: 250px; display: block; font-size: 1.25rem; line-height: 1.5; padding: 0.8125rem 0.5rem; transition: width .3s ease-in-out; white-space: nowrap; text-decoration: none; background-color: transparent;" href="index3.html" class="brand-link">
+                <img src="/AdminLTE-master/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                     style="opacity: .8; float: left; line-height: .8; margin-left: 0.8rem; margin-right: 0.5rem; margin-top: -3px; max-height: 33px; width: auto; box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23) !important; border-radius: 50%; vertical-align: middle; border-style: none; ">
+                <span style="transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; font-weight: 300 !important; color: rgba(255,255,255,.8); font-size: 1.25rem; line-height: 1.5; white-space: nowrap; " class="brand-text font-weight-light">BT Destek</span>
+            </a>
+
+            <div style="position: relative; overflow: visible !important; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: start; -webkit-box-align: start; height: calc(100% - 4rem); overflow-y: auto; padding-bottom: 0; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0; " class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div style="border-bottom: 1px solid #4f5962; overflow: hidden; white-space: nowrap; position: relative; padding-bottom: 1rem !important; margin-bottom: 1rem !important; margin-top: 1rem !important; display: flex !important; " class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div style="display: inline-block; padding-left: 0.8rem;" class="image">
+                        <img style="box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23) !important; border-radius: 50%; vertical-align: middle; border-style: none; height: auto; width: 2.1rem; " src="/AdminLTE-master/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div style="transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; padding: 5px 5px 5px 10px; overflow: hidden; white-space: nowrap; " class="info">
+                        <a style="color: #c2c7d0; display: block !important; text-decoration: none; background-color: transparent; " href="#" class="d-block">@Session["kullanici"]</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav style="margin-top: 0.5rem !important;" class="mt-2">
+                    <ul style="position: relative; flex-direction: column !important; display: flex; flex-wrap: wrap; padding-left: 0; margin-bottom: 0; list-style: none; margin-top: 0; white-space: nowrap; overflow: hidden; " class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Index/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900; font-family: Font Awesome 5 Free !important; -webkit-font-smoothing: antialiased !important; display: inline-block !important; font-style: normal !important; font-variant: normal !important; text-rendering: auto !important; line-height: 1 !important;" class="nav-icon fas fa-th"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Talep Bekleyenler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Taleplerim/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-thumbs-up"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Onaylanan Talepler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box;" class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Bildirim/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-minus-circle"></i>
+                                <p style=" display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Talebi Reddedileler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Taleplerim/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-edit"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Onayladığın Talepler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Taleplerim/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-user-check"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Tamamlanan Talepler
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 1170.77px; margin-left: 0; transition: margin-left .3s ease-in-out; ">
+
+            <!-- Main content -->
+            <section class="content" style="padding: 0; display: block; ">
+                @RenderBody()
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer style="transition: margin-left .3s ease-in-out; margin-left: 270px; background: #fff; border-top: 1px solid #dee2e6; color: #869099; padding: 1rem; display: block; " class="main-footer">
+            <strong style="font-weight: bolder;">Copyright &copy; 2023 <a>GENMOT</a>.</strong>
+            All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GENMOT_MESSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Tbl_Admin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Mail" Type="varchar" MaxLength="50" />
+          <Property Name="Sifre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Tbl_Birim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Birim" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Tbl_Destek">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="int" />
+          <Property Name="Birim" Type="tinyint" />
+          <Property Name="Aciklama" Type="varchar(max)" />
+          <Property Name="Durum" Type="varchar" MaxLength="50" />
+          <Property Name="TalepOnaylayan" Type="varchar" MaxLength="150" />
+          <Property Name="TalepSorunAciklama" Type="varchar(max)" />
+          <Property Name="OkunduMu" Type="bit" />
+          <Property Name="TalepTarih" Type="smalldatetime" />
+          <Property Name="OnayTarih" Type="smalldatetime" />
+          <Property Name="BitisTarih" Type="smalldatetime" />
+          <Property Name="RedTarih" Type="smalldatetime" />
+          <Property Name="BeklemeTarih" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="Tbl_Personel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="varchar" MaxLength="150" />
+          <Property Name="Mail" Type="varchar" MaxLength="200" />
+          <Property Name="Sifre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Tbl_Destek_Tbl_Birim">
+          <End Role="Tbl_Birim" Type="Self.Tbl_Birim" Multiplicity="0..1" />
+          <End Role="Tbl_Destek" Type="Self.Tbl_Destek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Birim">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tbl_Destek">
+              <PropertyRef Name="Birim" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tbl_Destek_Tbl_Personel">
+          <End Role="Tbl_Personel" Type="Self.Tbl_Personel" Multiplicity="0..1" />
+          <End Role="Tbl_Destek" Type="Self.Tbl_Destek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Personel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tbl_Destek">
+              <PropertyRef Name="AdSoyad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="GENMOT_MESSModelStoreContainer">
+          <EntitySet Name="Tbl_Admin" EntityType="Self.Tbl_Admin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_Birim" EntityType="Self.Tbl_Birim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_Destek" EntityType="Self.Tbl_Destek" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_Personel" EntityType="Self.Tbl_Personel" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Tbl_Destek_Tbl_Birim" Association="Self.FK_Tbl_Destek_Tbl_Birim">
+            <End Role="Tbl_Birim" EntitySet="Tbl_Birim" />
+            <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tbl_Destek_Tbl_Personel" Association="Self.FK_Tbl_Destek_Tbl_Personel">
+            <End Role="Tbl_Personel" EntitySet="Tbl_Personel" />
+            <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GENMOT_MESSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="GENMOT_MESSEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tbl_Admin" EntityType="GENMOT_MESSModel.Tbl_Admin" />
+          <EntitySet Name="Tbl_Birim" EntityType="GENMOT_MESSModel.Tbl_Birim" />
+          <EntitySet Name="Tbl_Destek" EntityType="GENMOT_MESSModel.Tbl_Destek" />
+          <EntitySet Name="Tbl_Personel" EntityType="GENMOT_MESSModel.Tbl_Personel" />
+          <AssociationSet Name="FK_Tbl_Destek_Tbl_Birim" Association="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Birim">
+            <End Role="Tbl_Birim" EntitySet="Tbl_Birim" />
+            <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Tbl_Destek_Tbl_Personel" Association="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Personel">
+            <End Role="Tbl_Personel" EntitySet="Tbl_Personel" />
+            <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Tbl_Admin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Tbl_Birim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Birim" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Tbl_Destek" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Birim" FromRole="Tbl_Birim" ToRole="Tbl_Destek" />
+        </EntityType>
+        <EntityType Name="Tbl_Destek">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="Int32" />
+          <Property Name="Birim" Type="Byte" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Durum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TalepOnaylayan" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="TalepSorunAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OkunduMu" Type="Boolean" />
+          <Property Name="TalepTarih" Type="DateTime" Precision="0" />
+          <Property Name="OnayTarih" Type="DateTime" Precision="0" />
+          <Property Name="BitisTarih" Type="DateTime" Precision="0" />
+          <Property Name="RedTarih" Type="DateTime" Precision="0" />
+          <Property Name="BeklemeTarih" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Tbl_Birim" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Birim" FromRole="Tbl_Destek" ToRole="Tbl_Birim" />
+          <NavigationProperty Name="Tbl_Personel" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Personel" FromRole="Tbl_Destek" ToRole="Tbl_Personel" />
+        </EntityType>
+        <EntityType Name="Tbl_Personel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Mail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Tbl_Destek" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Personel" FromRole="Tbl_Personel" ToRole="Tbl_Destek" />
+        </EntityType>
+        <Association Name="FK_Tbl_Destek_Tbl_Birim">
+          <End Type="GENMOT_MESSModel.Tbl_Birim" Role="Tbl_Birim" Multiplicity="0..1" />
+          <End Type="GENMOT_MESSModel.Tbl_Destek" Role="Tbl_Destek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Birim">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tbl_Destek">
+              <PropertyRef Name="Birim" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Tbl_Destek_Tbl_Personel">
+          <End Type="GENMOT_MESSModel.Tbl_Personel" Role="Tbl_Personel" Multiplicity="0..1" />
+          <End Type="GENMOT_MESSModel.Tbl_Destek" Role="Tbl_Destek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_Personel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Tbl_Destek">
+              <PropertyRef Name="AdSoyad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GENMOT_MESSModelStoreContainer" CdmEntityContainer="GENMOT_MESSEntities1">
+          <EntitySetMapping Name="Tbl_Admin">
+            <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Admin">
+              <MappingFragment StoreEntitySet="Tbl_Admin">
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_Birim">
+            <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Birim">
+              <MappingFragment StoreEntitySet="Tbl_Birim">
+                <ScalarProperty Name="Birim" ColumnName="Birim" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_Destek">
+            <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Destek">
+              <MappingFragment StoreEntitySet="Tbl_Destek">
+                <ScalarProperty Name="BeklemeTarih" ColumnName="BeklemeTarih" />
+                <ScalarProperty Name="RedTarih" ColumnName="RedTarih" />
+                <ScalarProperty Name="BitisTarih" ColumnName="BitisTarih" />
+                <ScalarProperty Name="OnayTarih" ColumnName="OnayTarih" />
+                <ScalarProperty Name="TalepTarih" ColumnName="TalepTarih" />
+                <ScalarProperty Name="OkunduMu" ColumnName="OkunduMu" />
+                <ScalarProperty Name="TalepSorunAciklama" ColumnName="TalepSorunAciklama" />
+                <ScalarProperty Name="TalepOnaylayan" ColumnName="TalepOnaylayan" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Birim" ColumnName="Birim" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_Personel">
+            <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Personel">
+              <MappingFragment StoreEntitySet="Tbl_Personel">
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a79bb8c6e4b1472c9bf87878f56382b8" Name="Diagram1">
+        <EntityTypeShape EntityType="GENMOT_MESSModel.Tbl_Admin" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GENMOT_MESSModel.Tbl_Birim" Width="1.5" PointX="0.75" PointY="6.125" />
+        <EntityTypeShape EntityType="GENMOT_MESSModel.Tbl_Destek" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="GENMOT_MESSModel.Tbl_Personel" Width="1.5" PointX="0.75" PointY="2" />
+        <AssociationConnector Association="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Birim" />
+        <AssociationConnector Association="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Personel" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

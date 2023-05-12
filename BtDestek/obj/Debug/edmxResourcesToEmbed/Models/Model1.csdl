@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GENMOT_MESSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="GENMOT_MESSEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_Admin" EntityType="GENMOT_MESSModel.Tbl_Admin" />
+    <EntitySet Name="Tbl_Birim" EntityType="GENMOT_MESSModel.Tbl_Birim" />
+    <EntitySet Name="Tbl_Destek" EntityType="GENMOT_MESSModel.Tbl_Destek" />
+    <EntitySet Name="Tbl_Personel" EntityType="GENMOT_MESSModel.Tbl_Personel" />
+    <AssociationSet Name="FK_Tbl_Destek_Tbl_Birim" Association="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Birim">
+      <End Role="Tbl_Birim" EntitySet="Tbl_Birim" />
+      <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Destek_Tbl_Personel" Association="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Personel">
+      <End Role="Tbl_Personel" EntitySet="Tbl_Personel" />
+      <End Role="Tbl_Destek" EntitySet="Tbl_Destek" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Tbl_Admin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Birim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Birim" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tbl_Destek" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Birim" FromRole="Tbl_Birim" ToRole="Tbl_Destek" />
+  </EntityType>
+  <EntityType Name="Tbl_Destek">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="Int32" />
+    <Property Name="Birim" Type="Byte" />
+    <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Durum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TalepOnaylayan" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="TalepSorunAciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="OkunduMu" Type="Boolean" />
+    <Property Name="TalepTarih" Type="DateTime" Precision="0" />
+    <Property Name="OnayTarih" Type="DateTime" Precision="0" />
+    <Property Name="BitisTarih" Type="DateTime" Precision="0" />
+    <Property Name="RedTarih" Type="DateTime" Precision="0" />
+    <Property Name="BeklemeTarih" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Tbl_Birim" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Birim" FromRole="Tbl_Destek" ToRole="Tbl_Birim" />
+    <NavigationProperty Name="Tbl_Personel" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Personel" FromRole="Tbl_Destek" ToRole="Tbl_Personel" />
+  </EntityType>
+  <EntityType Name="Tbl_Personel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Mail" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Tbl_Destek" Relationship="GENMOT_MESSModel.FK_Tbl_Destek_Tbl_Personel" FromRole="Tbl_Personel" ToRole="Tbl_Destek" />
+  </EntityType>
+  <Association Name="FK_Tbl_Destek_Tbl_Birim">
+    <End Type="GENMOT_MESSModel.Tbl_Birim" Role="Tbl_Birim" Multiplicity="0..1" />
+    <End Type="GENMOT_MESSModel.Tbl_Destek" Role="Tbl_Destek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Birim">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Destek">
+        <PropertyRef Name="Birim" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Destek_Tbl_Personel">
+    <End Type="GENMOT_MESSModel.Tbl_Personel" Role="Tbl_Personel" Multiplicity="0..1" />
+    <End Type="GENMOT_MESSModel.Tbl_Destek" Role="Tbl_Destek" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tbl_Destek">
+        <PropertyRef Name="AdSoyad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

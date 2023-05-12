@@ -1,0 +1,148 @@
+﻿@model BtDestek.Models.Tbl_Destek
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://i.hizliresim.com/ef24jl8.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BT Destek Detay</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed" style="margin: 0; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: left; background-color: #fff; font-family: Source Sans Pro;">
+    <div style="position: relative; min-height: 100%;" class="wrapper">
+        <!-- Main Sidebar Container -->
+        <aside style="bottom: 0; float: none; height: 100vh; left: 0; position: fixed; top: 0; min-height: 100%; box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important; background-color: #343a40; overflow-y: hidden; z-index: 1038; transition: margin-left .3s ease-in-out,width .3s ease-in-out;" class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Sidebar -->
+            <a style="border-bottom: 1px solid #4b545c; color: rgba(255,255,255,.8); width: 250px; display: block; font-size: 1.25rem; line-height: 1.5; padding: 0.8125rem 0.5rem; transition: width .3s ease-in-out; white-space: nowrap; text-decoration: none; background-color: transparent;" class="brand-link">
+                
+                <span style="transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; font-weight: 300 !important; color: rgba(255,255,255,.8); font-size: 1.25rem; line-height: 1.5; white-space: nowrap; " class="brand-text font-weight-light">BT Destek</span>
+            </a>
+
+            <div style="position: relative; overflow: visible !important; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: start; -webkit-box-align: start; height: calc(100% - 4rem); overflow-y: auto; padding-bottom: 0; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0; " class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div style="border-bottom: 1px solid #4f5962; overflow: hidden; white-space: nowrap; position: relative; padding-bottom: 1rem !important; margin-bottom: 1rem !important; margin-top: 1rem !important; display: flex !important; " class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div style="display: inline-block; padding-left: 0.8rem;" class="image">
+                        
+                    </div>
+                    <div style="transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; padding: 5px 5px 5px 10px; overflow: hidden; white-space: nowrap; " class="info">
+                        <a style="color: #c2c7d0; display: block !important; text-decoration: none; background-color: transparent; " href="#" class="d-block">@Session["kullanici"]</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav style="margin-top: 0.5rem !important;" class="mt-2">
+                    <ul style="position: relative; flex-direction: column !important; display: flex; flex-wrap: wrap; padding-left: 0; margin-bottom: 0; list-style: none; margin-top: 0; white-space: nowrap; overflow: hidden; " class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Default/Index/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900; font-family: Font Awesome 5 Free !important; -webkit-font-smoothing: antialiased !important; display: inline-block !important; font-style: normal !important; font-variant: normal !important; text-rendering: auto !important; line-height: 1 !important;" class="nav-icon fas fa-th"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Talep Bekleyenler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Default/Onaylanan/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-thumbs-up"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Onaylanan Talepler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box;" class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Default/Reddedilen/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-minus-circle"></i>
+                                <p style=" display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Talebi Reddedilenler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/My/Index/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-edit"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Onayladığın Talepler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Default/Tamamlanan/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-user-check"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Tamamlanan Talepler
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/GirisYap/Login/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-sign-out-alt"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Çıkış Yap
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 1170.77px; margin-left: 0; transition: margin-left .3s ease-in-out; ">
+
+            <!-- Main content -->
+            <section class="content" style="padding: 0; display: block; ">
+                <div style="max-width: 1340px; width: 100%; padding-right: 7.5px; padding-left: 7.5px; margin-right: auto !important; margin-left: auto;">
+                    <div style="padding-top: 3rem !important; margin-left: 3rem !important; margin-right: 3rem !important; " class="ml-5 pt-5 mr-5">
+                        <div style="max-width: 1140px; width: 100%; padding-right: 7.5px; padding-left: 7.5px; margin-right: auto !important; margin-left: auto;">
+                            <div class="ml-5 pt-5 mr-5" style=" padding-top: 3rem !important; margin-left: 3rem !important; margin-right: 3rem !important;">
+                                <form method="post">
+                                    @Html.Label("Ad Soyad", new { @style = "font-weight: 700; display: inline-block; margin-bottom: 0.5rem;" })
+                                    @Html.TextBoxFor(x => x.AdSoyad, new { disabled = "disabled", @class = "form-control", @style = "background-color: #e9ecef; opacity: 1; display: block; width: 100%; height: calc(2.25rem + 2px); padding: 0.375rem 0.75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-clip: padding-box; border: 1px solid #ced4da; border-radius: 0.25rem; box-shadow: inset 0 0 0 transparent; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; overflow: visible;margin: 0; cursor: default; padding:0; padding-left:10px;" })
+                                    <br />
+                                    @Html.Label("Açıklama", new { @style = "font-weight: 700; display: inline-block; margin-bottom: 0.5rem;" })
+                                    @Html.TextAreaFor(x => x.Aciklama, new { disabled = "disabled", @class = "form-control", @rows = "5", @style = "background-color: #e9ecef; opacity: 1; display: block; width: 100%; height: calc(2.25rem + 2px); padding: 0.375rem 0.75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-clip: padding-box; border: 1px solid #ced4da; border-radius: 0.25rem; box-shadow: inset 0 0 0 transparent; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; overflow: visible;margin: 0; cursor: default; padding:0; padding-left:10px; height: auto; padding-top: 7px;" })
+                                    <br />
+                                    @Html.Label("Sorun Açıklaması: ", new { @style = "font-weight: 700; display: inline-block; margin-bottom: 0.5rem;" })
+                                    @Html.TextAreaFor(x => x.TalepSorunAciklama, new { @class = "form-control", @rows = "5", @style = "height: auto;display: block; width: 100%; padding: 0.375rem 0.75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: 0.25rem; box-shadow: inset 0 0 0 transparent; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; overflow: auto; resize: vertical; margin: 0; font-family: inherit;" })
+
+                                    @Html.HiddenFor(x => x.ID)
+
+                                    <div>
+                                        <button type="submit" name="Islemler" value="Tamamlandı" class="btn btn-success" style="cursor: pointer; color: #fff; background-color: #28a745; border-color: #28a745; box-shadow: none; display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; -webkit-appearance: button; text-transform: none; overflow: visible; margin: 0; font-family: inherit; margin-top: 10px; ">Tamamlandı</button>
+                                        <button type="submit" name="Islemler" value="Beklemede" class="btn btn-danger" style="cursor: pointer; color: #fff; background-color: #ffc107; border-color: #ffc107; box-shadow: none; display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; -webkit-appearance: button; text-transform: none; overflow: visible; margin: 0; font-family: inherit; margin-top: 10px; ">Beklemede</button>
+                                        <button type="submit" name="Islemler" value="Guncelle" class="btn btn-danger" style="cursor: pointer; color: #fff; background-color: #0069d9; border-color: #0062cc; box-shadow: none; display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; -webkit-appearance: button; text-transform: none; overflow: visible; margin: 0; font-family: inherit; margin-top: 10px; ">Durum Güncelle</button>
+                                        <button type="submit" name="Islemler" value="Sil" class="btn btn-danger" style="cursor: pointer; color: #fff; background-color: #bd2130; border-color: #c82333; box-shadow: none; display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; -webkit-appearance: button; text-transform: none; overflow: visible; margin: 0; font-family: inherit; margin-top: 10px; ">İptal Et</button>
+                                        <button type="submit" name="Islemler" value="Vazgec" class="btn btn-danger" style="cursor: pointer; color: #fff; background-color: red; border-color: red; box-shadow: none; display: inline-block; font-weight: 400; text-align: center; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; -webkit-appearance: button; text-transform: none; overflow: visible; margin: 0; font-family: inherit; margin-top: 10px; ">Vazgeç</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer style="transition: margin-left .3s ease-in-out; margin-left: 270px; background: #fff; border-top: 1px solid #dee2e6; color: #869099; padding: 1rem; display: block; " class="main-footer">
+            <strong style="font-weight: bolder;">Copyright &copy; 2023 <a>GENMOT</a>.</strong>
+            All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+    </div>
+</body>
+</html>
+
+

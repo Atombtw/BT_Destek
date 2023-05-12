@@ -1,0 +1,195 @@
+﻿@using BtDestek.Models;
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<Tbl_Destek>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://i.hizliresim.com/ef24jl8.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BT Destek Taleplerim</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed" style="margin: 0; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: left; background-color: #fff; font-family: Source Sans Pro;">
+    <div style="position: relative; min-height: 100%;" class="wrapper">
+        <!-- Main Sidebar Container -->
+        <aside style="bottom: 0; float: none; height: 100vh; left: 0; position: fixed; top: 0; min-height: 100%; box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important; background-color: #343a40; overflow-y: hidden; z-index: 1038; transition: margin-left .3s ease-in-out,width .3s ease-in-out;" class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Sidebar -->
+            <a style="border-bottom: 1px solid #4b545c; color: rgba(255,255,255,.8); width: 250px; display: block; font-size: 1.25rem; line-height: 1.5; padding: 0.8125rem 0.5rem; transition: width .3s ease-in-out; white-space: nowrap; text-decoration: none; background-color: transparent;" class="brand-link">
+
+                <span style="transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; font-weight: 300 !important; color: rgba(255,255,255,.8); font-size: 1.25rem; line-height: 1.5; white-space: nowrap; " class="brand-text font-weight-light">BT Destek</span>
+            </a>
+
+            <div style="position: relative; overflow: visible !important; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-box-pack: start; -webkit-box-align: start; height: calc(100% - 4rem); overflow-y: auto; padding-bottom: 0; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0; " class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div style="border-bottom: 1px solid #4f5962; overflow: hidden; white-space: nowrap; position: relative; padding-bottom: 1rem !important; margin-bottom: 1rem !important; margin-top: 1rem !important; display: flex !important; " class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div style="display: inline-block; padding-left: 0.8rem;" class="image">
+
+                    </div>
+                    <div style="transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; padding: 5px 5px 5px 10px; overflow: hidden; white-space: nowrap; " class="info">
+                        <a style="color: #c2c7d0; display: block !important; text-decoration: none; background-color: transparent; " href="#" class="d-block">@Session["kullanici"]</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav style="margin-top: 0.5rem !important;" class="mt-2">
+                    <ul style="position: relative; flex-direction: column !important; display: flex; flex-wrap: wrap; padding-left: 0; margin-bottom: 0; list-style: none; margin-top: 0; white-space: nowrap; overflow: hidden; " class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Index/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900; font-family: Font Awesome 5 Free !important; -webkit-font-smoothing: antialiased !important; display: inline-block !important; font-style: normal !important; font-variant: normal !important; text-rendering: auto !important; line-height: 1 !important;" class="nav-icon fas fa-th"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Talep Oluşturun
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Taleplerim/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-calendar-alt"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Aktif Talepleriniz
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box;" class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/Kullanici/Bildirim/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-envelope-open"></i>
+                                <p style=" display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Bildirim
+                                    <span style="transition: transform ease-in-out .3s,-webkit-transform ease-in-out .3s; position: absolute; right: 1rem; top: 0.7rem; color: #fff; background-color: #17a2b8; display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; " class="badge badge-info right">@Session["Bildirim"]</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0; box-sizing: border-box; " class="nav-item">
+                            <a style="position: relative; white-space: nowrap; overflow: hidden; margin-bottom: 0.2rem; color: #c2c7d0; border-radius: 0.25rem; display: block; padding: 0.5rem 1rem; text-decoration: none; background-color: transparent; " href="/GirisYap/Login/" class="nav-link">
+                                <i style="font-size: 1.1rem; margin-right: 0.2rem; text-align: center; width: 1.6rem; font-weight: 900;" class="nav-icon fas fa-sign-out-alt"></i>
+                                <p style="display: inline-block !important; margin: 0 !important; transition: margin-left .3s linear,opacity .3s ease,visibility .3s ease; display: inline-block; margin: 0; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; ">
+                                    Çıkış Yap
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 1170.77px; margin-left: 0; transition: margin-left .3s ease-in-out; ">
+
+            <!-- Main content -->
+            <section class="content" style="padding: 0; display: block; ">
+                <div style="padding: 7rem 0; box-sizing: border-box;" class="content">
+                    <div style="max-width: 800px; width: 100%; padding-right: 7.5px; padding-left: 7.5px; margin-right: auto !important; margin-left: auto;" class="container">
+                        <div style="-webkit-box-align: stretch !important; align-items: stretch !important; -webkit-box-pack: center !important; justify-content: center !important; margin-right: 0; margin-left: 0; display: flex; box-sizing: border-box; " class="row align-items-stretch justify-content-center no-gutters">
+                            <div style="padding-right: 0; padding-left: 0; flex: 0 0 100%; max-width: 100%; position: relative; width: 100%; box-sizing: border-box; -webkit-box-flex: 0; " class="col-md-12">
+                                <div style="box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2); background: #fff; padding: 3rem !important; height: 100% !important; box-sizing: border-box; " class="form h-100 contact-wrap p-5">
+                                    <div class="experience-content resume-content" style="position: relative;">
+                                        <div class="wow bounceIn res-head mb-3 mb-sm-5 d-flex justify-content-sm-start justify-content-center align-items-center" style="margin-bottom: 3rem !important; -webkit-box-pack: start !important; -webkit-box-align: center !important; align-items: center !important; display: flex !important; justify-content: flex-start !important; ">
+                                            <i class="fas fa-laptop-code" style="line-height: 50px; margin-right: 15px; font-size: 40px; color: #eb2f06;"></i>
+                                            <h3 class="mb-0" style="margin:0; padding:0; font-size:30px; line-height: 50px; font-family: Roboto, sans-serif; font-weight: 500; color: #000;">
+                                                Talepleriniz
+                                            </h3>
+                                        </div>
+                                        @foreach (var item in Model)
+                                        {
+                                            if (item.Durum == "Beklemede")
+                                            {
+                                                <div class="wow fadeInLeft res-text" style="position: relative; background-color: #191825; padding: 15px 15px 15px 30px; border-radius: 5px; margin-bottom: 25px; ">
+                                                    <p class="res-circle" style="position: absolute; top: 50%; transform: translate(-15%, -330%); transition: 0.1s linear; right: 0%; color:yellow">Beklemede</p>
+                                                    <span class="res-circle" style="position: absolute; top: 50%; transform: translate(-200%, -200%); width: 20px; height: 20px; background-color: yellow; border-radius: 50%; transition: 0.1s linear; right: 0%"></span>
+                                                    <h4 style=" display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-family: Roboto, sans-serif; font-size: 1.5rem; font-weight: 500; line-height: 1.2; margin-top: 0; color: #f79f1f; margin-bottom: 0; ">Talep No: [@item.ID]</h4>
+                                                    <span class="date" style="color: #fff; display: inline-block; padding: 5px 15px; margin: 12px 0; font-weight: 600; background: linear-gradient(to left, #eb2f06, #f79f1f); border-radius: 5px;">@item.BeklemeTarih</span>
+                                                    <p class="info" style=" color: #eee; line-height: 1.8; margin-bottom: 0;">
+                                                        Talep Açıklaması:
+                                                        <br />
+                                                        @item.Aciklama
+                                                    </p>
+                                                    <div style="display: flex; justify-content:space-between">
+                                                        <a></a>
+                                                        <a href="/Kullanici/Detay/@item.ID" class="btn btn-danger" style="box-shadow: none; text-decoration: none; cursor: pointer; display: inline-block; font-weight: 400; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; color: #fff; text-align: center;">İptal Et</a>
+
+                                                    </div>
+                                                </div>
+                                            }
+                                            if (item.Durum == "Islemde")
+                                            {
+                                                <div class="wow fadeInLeft res-text" style="position: relative; background-color: #191825; padding: 15px 15px 15px 30px; border-radius: 5px; margin-bottom: 25px; ">
+                                                    <p class="res-circle" style="position: absolute; top: 50%; transform: translate(-40%, -460%); transition: 0.1s linear; right: 0%; color:green">İşlemde</p>
+                                                    <span class="res-circle" style="position: absolute; top: 50%; transform: translate(-200%, -350%); width: 20px; height: 20px; background-color: green; border-radius: 50%; transition: 0.1s linear; right: 0%"></span>
+                                                    <h4 style=" display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-family: Roboto, sans-serif; font-size: 1.5rem; font-weight: 500; line-height: 1.2; margin-top: 0; color: #f79f1f; margin-bottom: 0; ">Talep No: [@item.ID]</h4>
+                                                    <span class="date" style="color: #fff; display: inline-block; padding: 5px 15px; margin: 12px 0; font-weight: 600; background: linear-gradient(to left, #eb2f06, #f79f1f); border-radius: 5px;">@item.OnayTarih</span>
+                                                    <h6 class="info" style="margin-top: 0; font-size: 1rem; font-weight: 500; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #fff; color: #eee; line-height: 1.8; ">
+                                                        Talep Açıklaması:
+                                                        <br />
+                                                        @item.Aciklama
+                                                    </h6>
+                                                    <h6 class="info" style="margin-top: 0; font-size: 1rem; font-weight: 500; color: #eee; line-height: 1.8; margin-bottom: 0; ">
+                                                        Yetkili Açıklaması:
+                                                        <br />
+                                                        @item.TalepSorunAciklama
+                                                    </h6>
+                                                    <div style="display: flex; justify-content:space-between">
+                                                        <a></a>
+                                                        <a href="/Kullanici/Detay/@item.ID" class="btn btn-danger" style="box-shadow: none; text-decoration: none; cursor: pointer; display: inline-block; font-weight: 400; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; color: #fff; text-align: center;">İptal Et</a>
+
+                                                    </div>
+                                                </div>
+                                            }
+                                            if (item.Durum == "Henuz Isleme Alinmadi")
+                                            {
+                                                <div class="wow fadeInLeft res-text" style="position: relative; background-color: #191825; padding: 15px 15px 15px 30px; border-radius: 5px; margin-bottom: 25px; ">
+                                                    <p class="res-circle" style="position: absolute; top: 50%; transform: translate(-8%, -330%); transition: 0.1s linear; right: 0%; color:cyan">Henüz İşleme Alınmadı</p>
+                                                    <span class="res-circle" style="position: absolute; top: 50%; transform: translate(-200%, -200%); width: 20px; height: 20px; background-color: cyan; border-radius: 50%; transition: 0.1s linear; right: 0%"></span>
+                                                    <h4 style=" display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-family: Roboto, sans-serif; font-size: 1.5rem; font-weight: 500; line-height: 1.2; margin-top: 0; color: #f79f1f; margin-bottom: 0; ">Talep No: [@item.ID]</h4>
+                                                    <span class="date" style="color: #fff; display: inline-block; padding: 5px 15px; margin: 12px 0; font-weight: 600; background: linear-gradient(to left, #eb2f06, #f79f1f); border-radius: 5px;">@item.TalepTarih</span>
+                                                    <p class="info" style=" color: #eee; line-height: 1.8; margin-bottom: 0;">
+                                                        Talep Açıklaması:
+                                                        <br />
+                                                        @item.Aciklama
+                                                    </p>
+                                                    <div style="display: flex; justify-content:space-between">
+                                                        <a></a>
+                                                        <a href="/Kullanici/Detay/@item.ID" class="btn btn-danger" style="box-shadow: none; text-decoration: none; cursor: pointer; display: inline-block; font-weight: 400; vertical-align: middle; user-select: none; border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; color: #fff; text-align: center;">İptal Et</a>
+
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+                                        @Html.PagedListPager((IPagedList)Model, sayfa => Url.Action("Taleplerim", new { sayfa }))
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer style="transition: margin-left .3s ease-in-out; margin-left: 270px; background: #fff; border-top: 1px solid #dee2e6; color: #869099; padding: 1rem; display: block; " class="main-footer">
+            <strong style="font-weight: bolder;">Copyright &copy; 2023 <a>GENMOT</a>.</strong>
+            All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GENMOT_MESSModelStoreContainer" CdmEntityContainer="GENMOT_MESSEntities1">
+    <EntitySetMapping Name="Tbl_Admin">
+      <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Admin">
+        <MappingFragment StoreEntitySet="Tbl_Admin">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Birim">
+      <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Birim">
+        <MappingFragment StoreEntitySet="Tbl_Birim">
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Destek">
+      <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Destek">
+        <MappingFragment StoreEntitySet="Tbl_Destek">
+          <ScalarProperty Name="BeklemeTarih" ColumnName="BeklemeTarih" />
+          <ScalarProperty Name="RedTarih" ColumnName="RedTarih" />
+          <ScalarProperty Name="BitisTarih" ColumnName="BitisTarih" />
+          <ScalarProperty Name="OnayTarih" ColumnName="OnayTarih" />
+          <ScalarProperty Name="TalepTarih" ColumnName="TalepTarih" />
+          <ScalarProperty Name="OkunduMu" ColumnName="OkunduMu" />
+          <ScalarProperty Name="TalepSorunAciklama" ColumnName="TalepSorunAciklama" />
+          <ScalarProperty Name="TalepOnaylayan" ColumnName="TalepOnaylayan" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Personel">
+      <EntityTypeMapping TypeName="GENMOT_MESSModel.Tbl_Personel">
+        <MappingFragment StoreEntitySet="Tbl_Personel">
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
