@@ -18,7 +18,7 @@ namespace BtDestek.Controllers
             {
                 return RedirectToAction("Login", "GirisYap");
             }
-            var t = db.Tbl_Destek.Where(x => x.Durum == "Henuz Isleme Alinmadi").ToList();
+            var t = db.Tbl_Destek.Where(x => x.Durum == "Henuz Isleme Alinmadi" || x.Durum == "Beklemede").ToList();
             return View(t);
         }
 
@@ -54,6 +54,14 @@ namespace BtDestek.Controllers
                 t.OkunduMu = false;
                 db.SaveChanges();
             }
+            if (model.Islemler == "Beklet")
+            {
+                var t = db.Tbl_Destek.Find(p.ID);
+                t.BeklemeTarih = DateTime.Parse(DateTime.Now.ToString());
+                t.Durum = "Beklemede";
+                t.OkunduMu = true;
+                db.SaveChanges();
+            }
             if (model.Islemler == "Vazgec")
             {
                 return RedirectToAction("Index", "Default");
@@ -67,7 +75,7 @@ namespace BtDestek.Controllers
             {
                 return RedirectToAction("Login", "GirisYap");
             }
-            var t = db.Tbl_Destek.Where(x => x.Durum == "Islemde").ToList();
+            var t = db.Tbl_Destek.Where(x => x.Durum == "Islemde" || x.Durum == "Beklemede").ToList();
             return View(t);
         }
 

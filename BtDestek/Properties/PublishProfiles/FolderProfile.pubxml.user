@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\muharrem.rahat\Desktop\Yeni klasör</_PublishTargetUrl>
-    <History>True|2023-04-28T08:36:36.9233294Z;True|2023-04-13T17:17:55.7314358+03:00;</History>
+    <History>True|2023-05-16T05:53:08.3690401Z;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -5038,196 +5038,196 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/28/2023 11:16:59</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-barber-shop.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-big-counter.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-bounce.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-center-atom.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-center-circle.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-center-radar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-center-simple.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-corner-indicator.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-fill-left.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-flash.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-flat-top.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-loading-bar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-mac-osx.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-material.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/orange/pace-theme-minimal.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-barber-shop.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-big-counter.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-bounce.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-center-atom.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-center-circle.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-center-radar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-center-simple.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-corner-indicator.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-fill-left.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-flash.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-flat-top.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-loading-bar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-mac-osx.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-material.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/pink/pace-theme-minimal.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-barber-shop.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-big-counter.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-bounce.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-center-atom.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-center-circle.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-center-radar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-center-simple.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-corner-indicator.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-fill-left.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-flash.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-flat-top.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-loading-bar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-mac-osx.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-material.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/purple/pace-theme-minimal.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-barber-shop.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-big-counter.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-bounce.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-center-atom.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-center-circle.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-center-radar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-center-simple.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-corner-indicator.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-fill-left.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-flash.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-flat-top.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-loading-bar.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-mac-osx.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-material.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/red/pace-theme-minimal.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/silver/pace-theme-barber-shop.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/silver/pace-theme-big-counter.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/silver/pace-theme-bounce.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/silver/pace-theme-center-atom.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/28/2023 11:17:00</publishTime>
     </File>
     <File Include="AdminLTE-master/plugins/pace-progress/themes/silver/pace-theme-center-circle.css">
       <publishTime>03/28/2023 11:17:01</publishTime>
@@ -6064,16 +6064,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/28/2023 11:17:07</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>10/09/2013 16:29:20</publishTime>
+      <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>10/09/2013 16:29:20</publishTime>
+      <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/BtDestek.dll">
-      <publishTime>04/28/2023 15:30:35</publishTime>
+      <publishTime>05/16/2023 08:52:34</publishTime>
     </File>
     <File Include="bin/BtDestek.pdb">
-      <publishTime>04/28/2023 15:30:35</publishTime>
+      <publishTime>05/16/2023 08:52:34</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -6082,7 +6082,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/23/2017 13:15:20</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>05/09/2018 16:10:50</publishTime>
+      <publishTime>09/05/2018 16:10:50</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>05/27/2022 23:39:10</publishTime>
@@ -6136,10 +6136,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2018 12:09:42</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>05/12/2017 09:36:44</publishTime>
+      <publishTime>12/05/2017 09:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>05/12/2017 09:36:44</publishTime>
+      <publishTime>12/05/2017 09:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>08/08/2018 12:09:42</publishTime>
@@ -6148,85 +6148,85 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2018 12:09:42</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
-      <publishTime>05/11/2016 18:55:32</publishTime>
+      <publishTime>11/05/2016 18:55:32</publishTime>
     </File>
     <File Include="bin/roslyn/System.AppContext.dll">
-      <publishTime>05/11/2016 18:55:34</publishTime>
+      <publishTime>11/05/2016 18:55:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
       <publishTime>05/16/2018 03:29:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Console.dll">
-      <publishTime>05/11/2016 18:55:48</publishTime>
+      <publishTime>11/05/2016 18:55:48</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
-      <publishTime>05/11/2016 18:55:52</publishTime>
+      <publishTime>11/05/2016 18:55:52</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
-      <publishTime>05/11/2016 18:55:56</publishTime>
+      <publishTime>11/05/2016 18:55:56</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
-      <publishTime>05/11/2016 18:55:52</publishTime>
+      <publishTime>11/05/2016 18:55:52</publishTime>
     </File>
     <File Include="bin/roslyn/System.Globalization.Calendars.dll">
-      <publishTime>05/11/2016 18:56:02</publishTime>
+      <publishTime>11/05/2016 18:56:02</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Compression.dll">
-      <publishTime>05/11/2016 18:56:08</publishTime>
+      <publishTime>11/05/2016 18:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
-      <publishTime>05/11/2016 18:56:04</publishTime>
+      <publishTime>11/05/2016 18:56:04</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.dll">
-      <publishTime>05/11/2016 18:56:08</publishTime>
+      <publishTime>11/05/2016 18:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
-      <publishTime>05/11/2016 18:56:08</publishTime>
+      <publishTime>11/05/2016 18:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.Net.Http.dll">
-      <publishTime>05/11/2016 18:56:30</publishTime>
+      <publishTime>11/05/2016 18:56:30</publishTime>
     </File>
     <File Include="bin/roslyn/System.Net.Sockets.dll">
-      <publishTime>05/11/2016 18:56:34</publishTime>
+      <publishTime>11/05/2016 18:56:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
       <publishTime>05/16/2018 03:29:44</publishTime>
     </File>
     <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
-      <publishTime>05/11/2016 18:57:00</publishTime>
+      <publishTime>11/05/2016 18:57:00</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
-      <publishTime>05/11/2016 18:57:14</publishTime>
+      <publishTime>11/05/2016 18:57:14</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
-      <publishTime>05/11/2016 18:57:08</publishTime>
+      <publishTime>11/05/2016 18:57:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
-      <publishTime>05/11/2016 18:57:18</publishTime>
+      <publishTime>11/05/2016 18:57:18</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
-      <publishTime>05/11/2016 18:57:18</publishTime>
+      <publishTime>11/05/2016 18:57:18</publishTime>
     </File>
     <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
-      <publishTime>05/11/2016 18:57:20</publishTime>
+      <publishTime>11/05/2016 18:57:20</publishTime>
     </File>
     <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
-      <publishTime>05/11/2016 18:57:24</publishTime>
+      <publishTime>11/05/2016 18:57:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.ValueTuple.dll">
-      <publishTime>05/11/2016 18:57:30</publishTime>
+      <publishTime>11/05/2016 18:57:30</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
-      <publishTime>05/11/2016 18:57:36</publishTime>
+      <publishTime>11/05/2016 18:57:36</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
-      <publishTime>05/11/2016 18:57:34</publishTime>
+      <publishTime>11/05/2016 18:57:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.dll">
-      <publishTime>05/11/2016 18:57:40</publishTime>
+      <publishTime>11/05/2016 18:57:40</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
-      <publishTime>05/11/2016 18:57:34</publishTime>
+      <publishTime>11/05/2016 18:57:34</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -6250,7 +6250,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/27/2022 23:42:20</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>11/02/2014 14:26:04</publishTime>
+      <publishTime>02/11/2014 14:26:04</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
       <publishTime>05/27/2022 23:42:06</publishTime>
@@ -6271,7 +6271,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/28/2022 02:42:36</publishTime>
     </File>
     <File Include="bin/tr/System.Web.Optimization.resources.dll">
-      <publishTime>11/02/2014 17:28:44</publishTime>
+      <publishTime>02/11/2014 17:28:44</publishTime>
     </File>
     <File Include="bin/tr/System.Web.Razor.resources.dll">
       <publishTime>05/28/2022 02:43:06</publishTime>
@@ -6757,25 +6757,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/28/2023 11:13:03</publishTime>
     </File>
     <File Include="hotel-site/.DS_Store">
-      <publishTime>03/04/2023 08:43:23</publishTime>
+      <publishTime>04/03/2023 08:43:23</publishTime>
     </File>
     <File Include="hotel-site/blogs.html">
-      <publishTime>03/04/2023 08:43:23</publishTime>
+      <publishTime>04/03/2023 08:43:23</publishTime>
     </File>
     <File Include="hotel-site/css/stylee.css">
-      <publishTime>03/04/2023 09:24:45</publishTime>
+      <publishTime>04/03/2023 09:24:45</publishTime>
     </File>
     <File Include="hotel-site/css/utilss.css">
-      <publishTime>03/04/2023 09:04:27</publishTime>
+      <publishTime>04/03/2023 09:04:27</publishTime>
     </File>
     <File Include="hotel-site/img/.DS_Store">
-      <publishTime>03/04/2023 08:43:23</publishTime>
+      <publishTime>04/03/2023 08:43:23</publishTime>
     </File>
     <File Include="hotel-site/img/resim.png">
-      <publishTime>03/04/2023 08:52:19</publishTime>
+      <publishTime>04/03/2023 08:52:19</publishTime>
     </File>
     <File Include="hotel-site/index.html">
-      <publishTime>03/04/2023 08:43:23</publishTime>
+      <publishTime>04/03/2023 08:43:23</publishTime>
     </File>
     <File Include="img/favicon.ico">
       <publishTime>04/12/2023 11:21:24</publishTime>
@@ -6859,46 +6859,46 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/28/2023 11:13:17</publishTime>
     </File>
     <File Include="Views/Default/Detay.cshtml">
-      <publishTime>04/27/2023 11:46:26</publishTime>
+      <publishTime>05/16/2023 08:43:27</publishTime>
     </File>
     <File Include="Views/Default/Index.cshtml">
-      <publishTime>04/28/2023 14:30:43</publishTime>
+      <publishTime>05/16/2023 08:43:38</publishTime>
     </File>
     <File Include="Views/Default/Onaylanan.cshtml">
-      <publishTime>04/28/2023 14:30:11</publishTime>
+      <publishTime>05/16/2023 08:43:47</publishTime>
     </File>
     <File Include="Views/Default/Reddedilen.cshtml">
-      <publishTime>04/28/2023 14:32:46</publishTime>
+      <publishTime>05/16/2023 08:48:10</publishTime>
     </File>
     <File Include="Views/Default/Tamamlanan.cshtml">
-      <publishTime>04/28/2023 14:53:34</publishTime>
+      <publishTime>05/16/2023 08:48:19</publishTime>
     </File>
     <File Include="Views/GirisYap/Login.cshtml">
       <publishTime>04/25/2023 08:39:07</publishTime>
     </File>
     <File Include="Views/Kullanici/Anaekran.cshtml">
-      <publishTime>04/24/2023 11:50:50</publishTime>
+      <publishTime>05/16/2023 08:48:28</publishTime>
     </File>
     <File Include="Views/Kullanici/Bildirim.cshtml">
-      <publishTime>04/24/2023 09:53:23</publishTime>
+      <publishTime>05/16/2023 08:48:34</publishTime>
     </File>
     <File Include="Views/Kullanici/Detay.cshtml">
-      <publishTime>04/24/2023 09:59:03</publishTime>
+      <publishTime>05/16/2023 08:48:41</publishTime>
     </File>
     <File Include="Views/Kullanici/Index.cshtml">
-      <publishTime>04/24/2023 12:07:54</publishTime>
+      <publishTime>05/16/2023 08:48:49</publishTime>
     </File>
     <File Include="Views/Kullanici/Taleplerim.cshtml">
-      <publishTime>04/28/2023 14:23:05</publishTime>
+      <publishTime>05/16/2023 08:48:55</publishTime>
     </File>
     <File Include="Views/Kullanici/Tekrar.cshtml">
-      <publishTime>04/24/2023 09:53:23</publishTime>
+      <publishTime>05/16/2023 08:49:02</publishTime>
     </File>
     <File Include="Views/My/Detay.cshtml">
-      <publishTime>04/24/2023 09:53:23</publishTime>
+      <publishTime>05/16/2023 08:49:10</publishTime>
     </File>
     <File Include="Views/My/Index.cshtml">
-      <publishTime>04/28/2023 15:07:09</publishTime>
+      <publishTime>05/16/2023 08:49:22</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>03/28/2023 11:13:03</publishTime>
